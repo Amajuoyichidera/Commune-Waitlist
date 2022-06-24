@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,9 @@
 body {
     background-color: #F6F9FE;
     color: #372865;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 li {
@@ -63,7 +68,100 @@ a {
 .sec1 {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 200px;
+    padding-top: 40px;
+}
+
+.sec2 {
+    padding-top: 60px;
+}
+
+.nav-item button {
+    padding: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    background-color: #372865;
+    color: white;
+    border-radius: 5px;
+}
+
+header {
+    padding-top: 20px;
+}
+
+.btn {
+    padding: 11px;
+    padding-right: 30px;
+    padding-left: 20px;
+    border: none;
+    border: none;
+    border-radius: 25px;
+    background-color: #372865;
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 4vh;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 5.5vh;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+
+span {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #372865;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 125px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    outline: 1px solid #EAECEE;
+    border-radius: 3px;
+    padding-right: 60px;
+}
+
+h6 {
+    font-size: 2.1vh;
+    font-weight: bolder;
+}
+
+button {
+    transition: 0.5s ease-in;
+}
+.join:hover {
+    transform: scale(1.1);
+    background-color: #231945;
 }
 
 @media(max-width:767px) {
@@ -87,7 +185,7 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #262626;
+        background-color: #372865;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -103,6 +201,43 @@ a {
 
      .nav-menu.active {
         left: 0;
+     }
+
+     .sec1 {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: -50px;
+     }
+     .sec1 img {
+        padding-left: 50px;
+        margin-top: -170px;
+     }
+
+     form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+     }
+     form button {
+        padding: 20px;
+     }
+     .sec3 {
+        padding-left: 20px;
+        padding-top: 20px;
+     }
+     h1 {
+        font-size: 4vh;
+        text-align: center;
+     }
+     p {
+        padding-left: 10px;
+        line-height: 4vh;
+     }
+     .btn {
+        margin-left: 20px;
+        margin-right: 20px;
      }
 
 }
