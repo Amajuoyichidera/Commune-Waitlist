@@ -26,7 +26,7 @@ a {
 .navbar {
     min-height: 70px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0 24px;
 }
@@ -73,7 +73,7 @@ a {
 }
 
 .sec2 {
-    padding-top: 60px;
+    padding-top: 10px;
 }
 
 .nav-item button {
@@ -177,6 +177,11 @@ button {
     }
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+     }
+
+     body {
+        padding-left: 10px;
+        padding-right: 20px;
      }
 
      .nav-menu {
